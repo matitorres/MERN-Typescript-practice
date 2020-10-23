@@ -1,0 +1,29 @@
+@api = http://localhost:3000
+
+DELETE {{api}}/videos/5f921b0d438d732860238cbe
+
+###
+POST {{api}}/videos
+Content-Type: application/json
+
+{
+    "title": "Video 2",
+    "description": "Some description",
+    "url": "https://www.youtube.com/watch?v=Tm-F7esbQDo"
+}
+
+###
+PUT {{api}}/videos/5f921ed6107cca181cb615a6
+Content-Type: application/json
+
+{
+    "title": "Video 2",
+    "description": "Some description",
+    "url": "https://www.youtube.com/watch?v=Tm-F7esbQDo"
+}
+
+###
+GET {{api}}/videos
+
+###
+GET {{api}}/videos/5f91f07a03a7330d98ccbfe7
